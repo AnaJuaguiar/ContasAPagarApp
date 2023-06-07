@@ -28,85 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            LabelTitle = new Label();
+            labelTitle = new Label();
+            labelHelper = new Label();
+            textBoxSearch = new TextBox();
             buttonSearch = new Button();
-            labelInfo = new Label();
-            dataGridViewSearch = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewSearch).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // labelTitle
             // 
-            textBox1.Location = new Point(299, 93);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(263, 23);
-            textBox1.TabIndex = 0;
+            labelTitle.AutoSize = true;
+            labelTitle.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTitle.Location = new Point(328, 28);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(201, 54);
+            labelTitle.TabIndex = 0;
+            labelTitle.Text = "PESQUISA";
             // 
-            // LabelTitle
+            // labelHelper
             // 
-            LabelTitle.AutoSize = true;
-            LabelTitle.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            LabelTitle.Location = new Point(349, 27);
-            LabelTitle.Name = "LabelTitle";
-            LabelTitle.Size = new Size(137, 37);
-            LabelTitle.TabIndex = 1;
-            LabelTitle.Text = "PESQUISA";
+            labelHelper.AutoSize = true;
+            labelHelper.Location = new Point(344, 164);
+            labelHelper.Name = "labelHelper";
+            labelHelper.Size = new Size(134, 15);
+            labelHelper.TabIndex = 1;
+            labelHelper.Text = "Digite aqui sua pesquisa";
+            // 
+            // textBoxSearch
+            // 
+            textBoxSearch.Location = new Point(307, 113);
+            textBoxSearch.Multiline = true;
+            textBoxSearch.Name = "textBoxSearch";
+            textBoxSearch.Size = new Size(222, 38);
+            textBoxSearch.TabIndex = 2;
             // 
             // buttonSearch
             // 
-            buttonSearch.Location = new Point(328, 173);
+            buttonSearch.Location = new Point(337, 278);
             buttonSearch.Name = "buttonSearch";
-            buttonSearch.Size = new Size(158, 23);
-            buttonSearch.TabIndex = 2;
-            buttonSearch.Text = "Pesquisar Conta";
+            buttonSearch.Size = new Size(141, 69);
+            buttonSearch.TabIndex = 3;
+            buttonSearch.Text = "PESQUISAR";
             buttonSearch.UseVisualStyleBackColor = true;
-            // 
-            // labelInfo
-            // 
-            labelInfo.AutoSize = true;
-            labelInfo.Location = new Point(328, 133);
-            labelInfo.Name = "labelInfo";
-            labelInfo.Size = new Size(165, 15);
-            labelInfo.TabIndex = 3;
-            labelInfo.Text = "Digite aqui o código da Conta";
-            // 
-            // dataGridViewSearch
-            // 
-            dataGridViewSearch.BackgroundColor = SystemColors.ButtonFace;
-            dataGridViewSearch.BorderStyle = BorderStyle.None;
-            dataGridViewSearch.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewSearch.Location = new Point(151, 212);
-            dataGridViewSearch.Name = "dataGridViewSearch";
-            dataGridViewSearch.RowTemplate.Height = 25;
-            dataGridViewSearch.Size = new Size(535, 226);
-            dataGridViewSearch.TabIndex = 4;
-            dataGridViewSearch.CellContentClick += dataGridViewSearch_CellContentClick;
+            buttonSearch.Click += buttonSearch_Click;
             // 
             // SearchForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridViewSearch);
-            Controls.Add(labelInfo);
             Controls.Add(buttonSearch);
-            Controls.Add(LabelTitle);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxSearch);
+            Controls.Add(labelHelper);
+            Controls.Add(labelTitle);
             Name = "SearchForm";
             Text = "SearchForm";
-            Load += SearchForm_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridViewSearch).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
-        private Label LabelTitle;
+        private Label labelTitle;
+        private Label labelHelper;
+        private TextBox textBoxSearch;
         private Button buttonSearch;
-        private Label labelInfo;
-        private DataGridView dataGridViewSearch;
     }
 }

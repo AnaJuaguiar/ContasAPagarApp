@@ -31,5 +31,15 @@ namespace ContasAPagar.Model
         
         
         }
+        public string Show()
+        {
+            return (
+                $"Conta: {this.BillName} -" +
+                $" Valor: {this.BillValue} \n " +
+                $" Vencimento{this.BillExpiration} - " +
+                $" Código {this.BillCode}"
+                );
+            
+}
     }
 }
