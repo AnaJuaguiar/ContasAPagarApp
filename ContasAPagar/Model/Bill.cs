@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ContasAPagar.Model
 {
-    internal class Bill
+    public class Bill
     {
         public string BillName { get; set; }
         public string BillCode { get; set; }

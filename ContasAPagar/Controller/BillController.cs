@@ -76,11 +76,12 @@ namespace ContasAPagar.Controller
 
             Console.ReadKey();
         }
+        /*
         public void ShowAllBills(AllBills allBills)
         {
             ArrayList ListOfBills;
 
-            ListOfBills = allBills.ListAllBills();
+            //ListOfBills = allBills.ListAllBills();
 
             foreach (Bill x in ListOfBills)
             {
@@ -90,6 +91,6 @@ namespace ContasAPagar.Controller
             Console.ReadKey();
         }
 
-
+        */
     }
 }

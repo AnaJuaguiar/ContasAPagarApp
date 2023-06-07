@@ -13,9 +13,12 @@ namespace ContasAPagar
 {
     public partial class RegistrationForm : Form
     {
+        private AllBills allBillsList;
         public RegistrationForm()
         {
             InitializeComponent();
+            allBillsList = AllBills.Instance;
+           
         }
 
         private void buttonCreateBill_Click(object sender, EventArgs e)
@@ -25,6 +28,9 @@ namespace ContasAPagar
             double billValue = double.Parse(textBoxValueBill.Text);
             DateTime billExpiration = DateTime.Parse(textExpirationBill.Text);
 
+            Bill newBill = new Bill(billName, billCode, billValue, billExpiration);
+
+            allBillsList.InsertNewBill(newBill);
 
             // Realizar ações com o texto digitado
             // Exemplo: exibir o texto em uma caixa de diálogo

@@ -42,7 +42,6 @@
             labelTitle.Size = new Size(223, 32);
             labelTitle.TabIndex = 0;
             labelTitle.Text = "Listagem de Contas";
-            labelTitle.Click += label1_Click;
             // 
             // dataGridView1
             // 
@@ -52,7 +51,7 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(502, 316);
             dataGridView1.TabIndex = 1;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+           
             // 
             // FormListBills
             // 

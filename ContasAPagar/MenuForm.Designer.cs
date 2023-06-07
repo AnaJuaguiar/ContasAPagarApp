@@ -39,8 +39,6 @@ namespace ContasAPagar
             SaveXMLButton = new Button();
             ReadButton = new Button();
             SairButton = new Button();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // Title
@@ -129,23 +127,12 @@ namespace ContasAPagar
             SairButton.Text = "Sair";
             SairButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(117, 97);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(546, 181);
-            dataGridView1.TabIndex = 10;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
             Controls.Add(SairButton);
             Controls.Add(ReadButton);
             Controls.Add(SaveXMLButton);
@@ -157,7 +144,6 @@ namespace ContasAPagar
             Controls.Add(Title);
             Name = "Menu";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -173,6 +159,5 @@ namespace ContasAPagar
         private Button SaveXMLButton;
         private Button ReadButton;
         private Button SairButton;
-        private DataGridView dataGridView1;
     }
 }
