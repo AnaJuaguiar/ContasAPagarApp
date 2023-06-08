@@ -31,13 +31,16 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormListBills));
             labelTitle = new Label();
             dataGridView1 = new DataGridView();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // labelTitle
@@ -45,7 +48,7 @@
             labelTitle.AutoSize = true;
             labelTitle.Font = new Font("Reem Kufi", 25F, FontStyle.Bold, GraphicsUnit.Point);
             labelTitle.ForeColor = Color.DarkOliveGreen;
-            labelTitle.Location = new Point(257, 12);
+            labelTitle.Location = new Point(281, 17);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(343, 65);
             labelTitle.TabIndex = 0;
@@ -102,12 +105,22 @@
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(209, 17);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(66, 68);
+            pictureBox3.TabIndex = 4;
+            pictureBox3.TabStop = false;
+            // 
             // FormListBills
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(dataGridView1);
@@ -117,6 +130,7 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -127,5 +141,6 @@
         private DataGridView dataGridView1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }

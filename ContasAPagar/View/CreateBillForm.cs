@@ -23,20 +23,23 @@ namespace ContasAPagar
 
         private void buttonCreateBill_Click(object sender, EventArgs e)
         {
-            string billName = textBoxNameBill.Text;
-            string billCode = textBoxCodeBill.Text;
-            double billValue = double.Parse(textBoxValueBill.Text);
-            DateTime billExpiration = DateTime.Parse(textExpirationBill.Text);
+            try
+            {
+                string billName = textBoxNameBill.Text;
+                string billCode = textBoxCodeBill.Text;
+                double billValue = double.Parse(textBoxValueBill.Text);
+                DateTime billExpiration = DateTime.Parse(textExpirationBill.Text);
 
-            Bill newBill = new Bill(billName, billCode, billValue, billExpiration);
+                Bill newBill = new Bill(billName, billCode, billValue, billExpiration);
 
-            allBillsList.InsertNewBill(newBill);
+                allBillsList.InsertNewBill(newBill);
 
-            // Realizar ações com o texto digitado
-            // Exemplo: exibir o texto em uma caixa de diálogo
-            // MessageBox.Show("Texto digitado: " + textoDigitado);
+                MessageBox.Show("Conta criada com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao criar a conta: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
-
     }
 }

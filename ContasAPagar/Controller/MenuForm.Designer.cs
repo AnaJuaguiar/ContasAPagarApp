@@ -70,9 +70,9 @@ namespace ContasAPagar
             InsertButton.FlatAppearance.BorderSize = 0;
             InsertButton.FlatStyle = FlatStyle.Flat;
             InsertButton.Image = (Image)resources.GetObject("InsertButton.Image");
-            InsertButton.Location = new Point(549, 159);
+            InsertButton.Location = new Point(542, 163);
             InsertButton.Name = "InsertButton";
-            InsertButton.Size = new Size(68, 82);
+            InsertButton.Size = new Size(68, 67);
             InsertButton.TabIndex = 1;
             InsertButton.UseVisualStyleBackColor = false;
             InsertButton.Click += InsertButton_Click;
@@ -84,9 +84,9 @@ namespace ContasAPagar
             AlterButton.FlatStyle = FlatStyle.Flat;
             AlterButton.ForeColor = SystemColors.Control;
             AlterButton.Image = (Image)resources.GetObject("AlterButton.Image");
-            AlterButton.Location = new Point(193, 162);
+            AlterButton.Location = new Point(212, 163);
             AlterButton.Name = "AlterButton";
-            AlterButton.Size = new Size(116, 82);
+            AlterButton.Size = new Size(76, 67);
             AlterButton.TabIndex = 2;
             AlterButton.UseCompatibleTextRendering = true;
             AlterButton.UseVisualStyleBackColor = false;
@@ -98,9 +98,9 @@ namespace ContasAPagar
             DeleteButton.FlatAppearance.BorderSize = 0;
             DeleteButton.FlatStyle = FlatStyle.Flat;
             DeleteButton.Image = (Image)resources.GetObject("DeleteButton.Image");
-            DeleteButton.Location = new Point(355, 159);
+            DeleteButton.Location = new Point(362, 163);
             DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(89, 85);
+            DeleteButton.Size = new Size(89, 67);
             DeleteButton.TabIndex = 3;
             DeleteButton.UseVisualStyleBackColor = false;
             DeleteButton.Click += DeleteButton_Click;
@@ -115,7 +115,7 @@ namespace ContasAPagar
             SearchButton.FlatStyle = FlatStyle.Flat;
             SearchButton.ForeColor = SystemColors.Control;
             SearchButton.Image = (Image)resources.GetObject("SearchButton.Image");
-            SearchButton.Location = new Point(75, 170);
+            SearchButton.Location = new Point(65, 163);
             SearchButton.Name = "SearchButton";
             SearchButton.Size = new Size(67, 67);
             SearchButton.TabIndex = 4;
@@ -128,9 +128,9 @@ namespace ContasAPagar
             ShowButton.FlatAppearance.BorderSize = 0;
             ShowButton.FlatStyle = FlatStyle.Flat;
             ShowButton.Image = (Image)resources.GetObject("ShowButton.Image");
-            ShowButton.Location = new Point(709, 163);
+            ShowButton.Location = new Point(711, 163);
             ShowButton.Name = "ShowButton";
-            ShowButton.Size = new Size(69, 76);
+            ShowButton.Size = new Size(69, 67);
             ShowButton.TabIndex = 5;
             ShowButton.UseVisualStyleBackColor = false;
             ShowButton.Click += ShowButton_Click;
@@ -141,9 +141,9 @@ namespace ContasAPagar
             SaveXMLButton.FlatAppearance.BorderSize = 0;
             SaveXMLButton.FlatStyle = FlatStyle.Flat;
             SaveXMLButton.Image = (Image)resources.GetObject("SaveXMLButton.Image");
-            SaveXMLButton.Location = new Point(375, 299);
+            SaveXMLButton.Location = new Point(322, 299);
             SaveXMLButton.Name = "SaveXMLButton";
-            SaveXMLButton.Size = new Size(53, 72);
+            SaveXMLButton.Size = new Size(53, 67);
             SaveXMLButton.TabIndex = 7;
             SaveXMLButton.UseVisualStyleBackColor = false;
             SaveXMLButton.Click += SaveXMLButton_Click;
@@ -153,9 +153,9 @@ namespace ContasAPagar
             ReadButton.FlatAppearance.BorderSize = 0;
             ReadButton.FlatStyle = FlatStyle.Flat;
             ReadButton.Image = (Image)resources.GetObject("ReadButton.Image");
-            ReadButton.Location = new Point(517, 299);
+            ReadButton.Location = new Point(445, 299);
             ReadButton.Name = "ReadButton";
-            ReadButton.Size = new Size(67, 72);
+            ReadButton.Size = new Size(67, 67);
             ReadButton.TabIndex = 8;
             ReadButton.UseVisualStyleBackColor = true;
             ReadButton.Click += ReadButton_Click;
@@ -224,15 +224,15 @@ namespace ContasAPagar
             label4.Font = new Font("Reem Kufi", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(517, 239);
             label4.Name = "label4";
-            label4.Size = new Size(137, 30);
+            label4.Size = new Size(128, 30);
             label4.TabIndex = 15;
-            label4.Text = "Caadastrar conta";
+            label4.Text = "Cadastrar conta";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Reem Kufi", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(679, 251);
+            label5.Location = new Point(670, 239);
             label5.Name = "label5";
             label5.Size = new Size(152, 30);
             label5.TabIndex = 16;
@@ -242,7 +242,7 @@ namespace ContasAPagar
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Reem Kufi", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(355, 372);
+            label6.Location = new Point(304, 369);
             label6.Name = "label6";
             label6.Size = new Size(96, 30);
             label6.TabIndex = 17;
@@ -252,7 +252,7 @@ namespace ContasAPagar
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Reem Kufi", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(517, 372);
+            label7.Location = new Point(445, 372);
             label7.Name = "label7";
             label7.Size = new Size(75, 30);
             label7.TabIndex = 18;

@@ -14,6 +14,7 @@ namespace ContasAPagar
     public partial class SearchForm : Form
     {
         private AllBills allBillsList;
+
         public SearchForm()
         {
             InitializeComponent();
@@ -22,25 +23,27 @@ namespace ContasAPagar
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            string searchCode = textBoxSearch.Text;
-
-            var resultSearch = allBillsList.SearchBill(searchCode);
-
-            if (resultSearch != null)
+            try
             {
-                MessageBox.Show(
-                    $"Resultados encontrados! \n {resultSearch.Show()}",
-                    $"Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string searchCode = textBoxSearch.Text;
+
+                var resultSearch = allBillsList.SearchBill(searchCode);
+
+                if (resultSearch != null)
+                {
+                    MessageBox.Show(
+                        $"Resultados encontrados! \n {resultSearch.Show()}",
+                        "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Nenhuma conta com esse código foi cadastrada", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Nenhuma conta com esse código foi cadastrada", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Erro ao pesquisar a conta: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
-
-
     }
 }

@@ -54,7 +54,7 @@
             labelTitle.AutoSize = true;
             labelTitle.Font = new Font("Reem Kufi", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             labelTitle.ForeColor = Color.DarkCyan;
-            labelTitle.Location = new Point(274, 11);
+            labelTitle.Location = new Point(284, 17);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(277, 51);
             labelTitle.TabIndex = 0;
@@ -187,9 +187,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(117, 65);
+            pictureBox3.Location = new Point(200, 11);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(566, 361);
+            pictureBox3.Size = new Size(68, 68);
             pictureBox3.TabIndex = 14;
             pictureBox3.TabStop = false;
             // 
@@ -199,6 +199,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(labelExpiration);
@@ -213,7 +214,6 @@
             Controls.Add(labelBillValue);
             Controls.Add(labelBillName);
             Controls.Add(labelTitle);
-            Controls.Add(pictureBox3);
             Name = "EditBillForm";
             Text = "EditBillForm";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

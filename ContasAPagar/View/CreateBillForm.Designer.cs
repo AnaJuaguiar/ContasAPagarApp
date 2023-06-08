@@ -40,12 +40,12 @@
             textBoxValueBill = new TextBox();
             textExpirationBill = new TextBox();
             ButtonCreateBill = new Button();
-            pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox3 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // linkLabel1
@@ -61,7 +61,7 @@
             TitleRegister.AutoSize = true;
             TitleRegister.Font = new Font("Reem Kufi", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             TitleRegister.ForeColor = Color.DarkOliveGreen;
-            TitleRegister.Location = new Point(198, 8);
+            TitleRegister.Location = new Point(236, 42);
             TitleRegister.Name = "TitleRegister";
             TitleRegister.Size = new Size(422, 51);
             TitleRegister.TabIndex = 1;
@@ -163,15 +163,6 @@
             ButtonCreateBill.UseVisualStyleBackColor = false;
             ButtonCreateBill.Click += buttonCreateBill_Click;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources._9049302a132dd7448288de6480539da1;
-            pictureBox2.Location = new Point(115, 63);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(566, 368);
-            pictureBox2.TabIndex = 12;
-            pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
@@ -190,12 +181,22 @@
             pictureBox3.TabIndex = 14;
             pictureBox3.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(164, 34);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(66, 66);
+            pictureBox2.TabIndex = 15;
+            pictureBox2.TabStop = false;
+            // 
             // RegistrationForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
             Controls.Add(ButtonCreateBill);
@@ -209,13 +210,12 @@
             Controls.Add(BillName);
             Controls.Add(TitleRegister);
             Controls.Add(linkLabel1);
-            Controls.Add(pictureBox2);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             Name = "RegistrationForm";
             Text = "Formulário de Cadastro";
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -233,8 +233,8 @@
         private TextBox textBoxValueBill;
         private TextBox textExpirationBill;
         private Button ButtonCreateBill;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
     }
 }
