@@ -29,7 +29,7 @@ namespace ContasAPagar
             if (resultSearch != null)
             {
                 MessageBox.Show(
-                    $"Resultados encontrados! \n {resultSearch.Show()}" ,
+                    $"Resultados encontrados! \n {resultSearch.Show()}",
                     $"Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
@@ -41,6 +41,6 @@ namespace ContasAPagar
 
         }
 
-     
+
     }
 }
