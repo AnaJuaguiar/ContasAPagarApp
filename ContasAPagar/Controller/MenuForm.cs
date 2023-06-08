@@ -48,20 +48,36 @@ namespace ContasAPagar
             editBillForm.ShowDialog();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
         private void SaveXMLButton_Click(object sender, EventArgs e)
         {
-            allBillsList.SaveXml();
-            MessageBox.Show("XML Salvo ");
+            try
+            {
+                int result = allBillsList.SaveXml();
+
+                MessageBox.Show("XML Salvo com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao salvar o XML: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ReadButton_Click(object sender, EventArgs e)
         {
-            allBillsList.ReadXml();
-            MessageBox.Show("XML Lido ");
+            try
+            {
+                int result = allBillsList.ReadXml();
+
+                if (result > 0)
+                {
+                    MessageBox.Show("Arquivo XML lido com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao ler o arquivo XML: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
     }
 }

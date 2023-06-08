@@ -119,9 +119,11 @@ namespace ContasAPagar.Model
 
                         return AllBillsList.Count;
                     }
+                   
                 }
                 else
                 {
+                    MessageBox.Show("O usuário cancelou a operação", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return 0;
                 }
             }
