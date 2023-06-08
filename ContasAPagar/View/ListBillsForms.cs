@@ -14,7 +14,7 @@ namespace ContasAPagar
 {
     public partial class FormListBills : Form
     {
-        private List<Bill> allBillsList =  new List<Bill>(); 
+        private List<Bill> allBillsList = new List<Bill>();
 
         public FormListBills()
         {
@@ -24,6 +24,6 @@ namespace ContasAPagar
             DataGridConfigs.PreencherListaDados(dataGridView1, allBillsList);
             dataGridView1.DataSource = allBillsList;
         }
-       
+
     }
 }

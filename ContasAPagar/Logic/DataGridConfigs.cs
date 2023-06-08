@@ -24,12 +24,12 @@ namespace ContasAPagar.Logic
             DataGridViewTextBoxColumn colunaBillName = new DataGridViewTextBoxColumn();
             colunaBillName.Name = "BillName";
             colunaBillName.DataPropertyName = "BillName";
-            colunaBillName.HeaderText = "Nome da Conta";
+            colunaBillName.HeaderText = "Nome";
 
             DataGridViewTextBoxColumn colunaBillCode = new DataGridViewTextBoxColumn();
             colunaBillCode.Name = "BillCode";
             colunaBillCode.DataPropertyName = "BillCode";
-            colunaBillCode.HeaderText = "Código da Conta";
+            colunaBillCode.HeaderText = "Código";
 
             DataGridViewTextBoxColumn colunaBillValue = new DataGridViewTextBoxColumn();
             colunaBillValue.Name = "BillValue";
@@ -39,7 +39,7 @@ namespace ContasAPagar.Logic
             DataGridViewTextBoxColumn colunaBillExpiration = new DataGridViewTextBoxColumn();
             colunaBillExpiration.Name = "BillExpiration";
             colunaBillExpiration.DataPropertyName = "BillExpiration";
-            colunaBillExpiration.HeaderText = "Data de Vencimento";
+            colunaBillExpiration.HeaderText = "Data";
 
             dataGridView1.Columns.Add(colunaBillName);
             dataGridView1.Columns.Add(colunaBillCode);
