@@ -18,7 +18,7 @@ namespace ContasAPagar
         {
             InitializeComponent();
             allBillsList = AllBills.Instance;
-           
+
         }
 
         private void buttonCreateBill_Click(object sender, EventArgs e)
@@ -37,6 +37,6 @@ namespace ContasAPagar
             // MessageBox.Show("Texto digitado: " + textoDigitado);
         }
 
-     
+
     }
 }

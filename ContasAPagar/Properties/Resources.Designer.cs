@@ -63,6 +63,16 @@ namespace ContasAPagar.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _9049302a132dd7448288de6480539da1 {
+            get {
+                object obj = ResourceManager.GetObject("9049302a132dd7448288de6480539da1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bill__1_ {
             get {
                 object obj = ResourceManager.GetObject("bill (1)", resourceCulture);

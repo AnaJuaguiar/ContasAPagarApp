@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditBillForm));
             labelTitle = new Label();
             labelBillName = new Label();
             labelBillValue = new Label();
@@ -40,113 +41,166 @@
             textBoxExpiration = new TextBox();
             labelBillCode = new Label();
             labelExpiration = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // labelTitle
             // 
             labelTitle.AutoSize = true;
-            labelTitle.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
-            labelTitle.Location = new Point(236, 9);
+            labelTitle.Font = new Font("Reem Kufi", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelTitle.ForeColor = Color.DarkCyan;
+            labelTitle.Location = new Point(274, 11);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(340, 54);
+            labelTitle.Size = new Size(277, 51);
             labelTitle.TabIndex = 0;
             labelTitle.Text = "ALTERAR CONTAS";
             // 
             // labelBillName
             // 
             labelBillName.AutoSize = true;
-            labelBillName.Location = new Point(101, 126);
+            labelBillName.Font = new Font("Reem Kufi", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelBillName.Location = new Point(144, 162);
             labelBillName.Name = "labelBillName";
-            labelBillName.Size = new Size(169, 15);
+            labelBillName.Size = new Size(218, 30);
             labelBillName.TabIndex = 1;
             labelBillName.Text = "Digite o Novo nome da conta: ";
             // 
             // labelBillValue
             // 
             labelBillValue.AutoSize = true;
-            labelBillValue.Location = new Point(101, 223);
+            labelBillValue.Font = new Font("Reem Kufi", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelBillValue.Location = new Point(145, 263);
             labelBillValue.Name = "labelBillValue";
-            labelBillValue.Size = new Size(156, 15);
+            labelBillValue.Size = new Size(206, 30);
             labelBillValue.TabIndex = 2;
             labelBillValue.Text = "Digite o novo valor da conta";
             // 
             // labelCode
             // 
             labelCode.AutoSize = true;
-            labelCode.Location = new Point(101, 86);
+            labelCode.Font = new Font("Reem Kufi", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelCode.Location = new Point(144, 96);
             labelCode.Name = "labelCode";
-            labelCode.Size = new Size(232, 15);
+            labelCode.Size = new Size(309, 30);
             labelCode.TabIndex = 3;
             labelCode.Text = "Digite o código da conta que deseja alterar";
             // 
             // textBoxOldCode
             // 
-            textBoxOldCode.Location = new Point(476, 83);
+            textBoxOldCode.Font = new Font("Reem Kufi", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxOldCode.Location = new Point(497, 96);
+            textBoxOldCode.Multiline = true;
             textBoxOldCode.Name = "textBoxOldCode";
-            textBoxOldCode.Size = new Size(100, 23);
+            textBoxOldCode.Size = new Size(147, 30);
             textBoxOldCode.TabIndex = 4;
             // 
             // textBoxBillName
             // 
-            textBoxBillName.Location = new Point(476, 135);
+            textBoxBillName.Location = new Point(466, 162);
+            textBoxBillName.Multiline = true;
             textBoxBillName.Name = "textBoxBillName";
-            textBoxBillName.Size = new Size(100, 23);
+            textBoxBillName.Size = new Size(178, 30);
             textBoxBillName.TabIndex = 5;
             // 
             // textBoxBillValue
             // 
-            textBoxBillValue.Location = new Point(476, 223);
+            textBoxBillValue.Location = new Point(466, 263);
+            textBoxBillValue.Multiline = true;
             textBoxBillValue.Name = "textBoxBillValue";
-            textBoxBillValue.Size = new Size(100, 23);
+            textBoxBillValue.Size = new Size(178, 30);
             textBoxBillValue.TabIndex = 6;
             // 
             // buttonEdit
             // 
-            buttonEdit.Location = new Point(352, 372);
+            buttonEdit.BackColor = Color.DarkCyan;
+            buttonEdit.FlatAppearance.BorderSize = 0;
+            buttonEdit.FlatStyle = FlatStyle.Flat;
+            buttonEdit.Font = new Font("Reem Kufi", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonEdit.ForeColor = Color.MintCream;
+            buttonEdit.Location = new Point(313, 353);
             buttonEdit.Name = "buttonEdit";
-            buttonEdit.Size = new Size(135, 46);
+            buttonEdit.Size = new Size(213, 65);
             buttonEdit.TabIndex = 7;
             buttonEdit.Text = "Alterar Conta";
-            buttonEdit.UseVisualStyleBackColor = true;
+            buttonEdit.UseVisualStyleBackColor = false;
             buttonEdit.Click += buttonEdit_Click;
             // 
             // textBoxCode
             // 
-            textBoxCode.Location = new Point(476, 178);
+            textBoxCode.Location = new Point(466, 216);
+            textBoxCode.Multiline = true;
             textBoxCode.Name = "textBoxCode";
-            textBoxCode.Size = new Size(100, 23);
+            textBoxCode.Size = new Size(178, 30);
             textBoxCode.TabIndex = 8;
             // 
             // textBoxExpiration
             // 
-            textBoxExpiration.Location = new Point(476, 299);
+            textBoxExpiration.Location = new Point(466, 317);
+            textBoxExpiration.Multiline = true;
             textBoxExpiration.Name = "textBoxExpiration";
-            textBoxExpiration.Size = new Size(100, 23);
+            textBoxExpiration.Size = new Size(178, 30);
             textBoxExpiration.TabIndex = 9;
             // 
             // labelBillCode
             // 
             labelBillCode.AutoSize = true;
-            labelBillCode.Location = new Point(103, 178);
+            labelBillCode.Font = new Font("Reem Kufi", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelBillCode.Location = new Point(144, 216);
             labelBillCode.Name = "labelBillCode";
-            labelBillCode.Size = new Size(167, 15);
+            labelBillCode.Size = new Size(219, 30);
             labelBillCode.TabIndex = 10;
             labelBillCode.Text = "Digite o novo código da conta";
             // 
             // labelExpiration
             // 
             labelExpiration.AutoSize = true;
-            labelExpiration.Location = new Point(121, 286);
+            labelExpiration.Font = new Font("Reem Kufi", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labelExpiration.Location = new Point(144, 317);
             labelExpiration.Name = "labelExpiration";
-            labelExpiration.Size = new Size(179, 15);
+            labelExpiration.Size = new Size(240, 30);
             labelExpiration.TabIndex = 11;
             labelExpiration.Text = "Digite a nova expiração da conta";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 68);
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(688, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(100, 68);
+            pictureBox2.TabIndex = 13;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(117, 65);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(566, 361);
+            pictureBox3.TabIndex = 14;
+            pictureBox3.TabStop = false;
             // 
             // EditBillForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Window;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(labelExpiration);
             Controls.Add(labelBillCode);
             Controls.Add(textBoxExpiration);
@@ -159,8 +213,12 @@
             Controls.Add(labelBillValue);
             Controls.Add(labelBillName);
             Controls.Add(labelTitle);
+            Controls.Add(pictureBox3);
             Name = "EditBillForm";
             Text = "EditBillForm";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -179,5 +237,8 @@
         private TextBox textBoxExpiration;
         private Label labelBillCode;
         private Label labelExpiration;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }
