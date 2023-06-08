@@ -7,12 +7,10 @@ namespace ContasAPagar
 {
     public partial class Menu : Form
     {
-        private AllBills allBillsList;
 
         public Menu()
         {
             InitializeComponent();
-            allBillsList = AllBills.Instance;
         }
 
         public void InsertButton_Click(object sender, EventArgs e)
@@ -41,6 +39,12 @@ namespace ContasAPagar
         {
             DeleteForm deleteForm = new DeleteForm();
             deleteForm.ShowDialog();
+        }
+
+        private void AlterButton_Click(object sender, EventArgs e)
+        {
+            EditBillForm editBillForm = new EditBillForm();
+            editBillForm.ShowDialog();
         }
     }
 }

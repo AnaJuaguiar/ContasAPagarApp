@@ -70,6 +70,7 @@ namespace ContasAPagar
             AlterButton.Text = "Alterar Contas";
             AlterButton.UseCompatibleTextRendering = true;
             AlterButton.UseVisualStyleBackColor = true;
+            AlterButton.Click += AlterButton_Click;
             // 
             // DeleteButton
             // 

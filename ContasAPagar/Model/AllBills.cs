@@ -30,10 +30,10 @@ namespace ContasAPagar.Model
             AllBillsList.Add(newBill);
         }
 
-        public void UpdateBill(Bill x, Bill y)
+        public void UpdateBill(Bill oldBill, Bill newBill)
         {
-            int oldBillPosition = AllBillsList.IndexOf(x);
-            AllBillsList[oldBillPosition] = y;
+            int oldBillPosition = AllBillsList.IndexOf(oldBill);
+            AllBillsList[oldBillPosition] = newBill;
         }
 
         public void DeleteBill(Bill x)
