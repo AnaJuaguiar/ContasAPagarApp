@@ -7,10 +7,11 @@ namespace ContasAPagar
 {
     public partial class Menu : Form
     {
-
+        private AllBills allBillsList;
         public Menu()
         {
             InitializeComponent();
+            allBillsList = AllBills.Instance;
         }
 
         public void InsertButton_Click(object sender, EventArgs e)
@@ -51,15 +52,16 @@ namespace ContasAPagar
         {
 
         }
-
-        private void label3_Click(object sender, EventArgs e)
+        private void SaveXMLButton_Click(object sender, EventArgs e)
         {
-
+            allBillsList.SaveXml();
+            MessageBox.Show("XML Salvo ");
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void ReadButton_Click(object sender, EventArgs e)
         {
-
+            allBillsList.ReadXml();
+            MessageBox.Show("XML Lido ");
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,10 @@ namespace ContasAPagar.Model
        
         public DateTime BillExpiration { get; set; }
 
+        public Bill()
+        {
+            
+        }
         public Bill(string billName, string billCode, double billValue, DateTime billExpiration)
         {
             BillName = billName;
@@ -22,15 +27,6 @@ namespace ContasAPagar.Model
             BillExpiration = billExpiration;
         }
 
-        public void ReadBillData()
-        {
-
-        }
-        public void WriteBillData() { 
-
-        
-        
-        }
         public string Show()
         {
             return (
@@ -40,6 +36,6 @@ namespace ContasAPagar.Model
                 $" Código {this.BillCode}"
                 );
             
-}
+        }
     }
 }

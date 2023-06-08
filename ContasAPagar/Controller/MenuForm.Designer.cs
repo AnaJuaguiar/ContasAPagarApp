@@ -146,6 +146,7 @@ namespace ContasAPagar
             SaveXMLButton.Size = new Size(53, 72);
             SaveXMLButton.TabIndex = 7;
             SaveXMLButton.UseVisualStyleBackColor = false;
+            SaveXMLButton.Click += SaveXMLButton_Click;
             // 
             // ReadButton
             // 
@@ -157,6 +158,7 @@ namespace ContasAPagar
             ReadButton.Size = new Size(67, 72);
             ReadButton.TabIndex = 8;
             ReadButton.UseVisualStyleBackColor = true;
+            ReadButton.Click += ReadButton_Click;
             // 
             // SairButton
             // 
@@ -205,7 +207,6 @@ namespace ContasAPagar
             label2.Size = new Size(116, 30);
             label2.TabIndex = 13;
             label2.Text = "Alterar Contas";
-            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -216,7 +217,6 @@ namespace ContasAPagar
             label3.Size = new Size(119, 30);
             label3.TabIndex = 14;
             label3.Text = "Deletar Contas";
-            label3.Click += label3_Click;
             // 
             // label4
             // 
@@ -247,7 +247,6 @@ namespace ContasAPagar
             label6.Size = new Size(96, 30);
             label6.TabIndex = 17;
             label6.Text = "Salvar XML";
-            label6.Click += label6_Click;
             // 
             // label7
             // 
