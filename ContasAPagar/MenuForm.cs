@@ -23,18 +23,24 @@ namespace ContasAPagar
 
         public void SearchButton_Click(object sender, EventArgs e)
         {
-            
+
             SearchForm searchForm = new SearchForm();
             searchForm.ShowDialog();
-            
+
         }
 
         public void ShowButton_Click(object sender, EventArgs e)
         {
-            
+
             FormListBills formListBills = new FormListBills();
             formListBills.ShowDialog();
-            
+
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            DeleteForm deleteForm = new DeleteForm();
+            deleteForm.ShowDialog();
         }
     }
 }

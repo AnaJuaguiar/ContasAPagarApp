@@ -79,6 +79,7 @@ namespace ContasAPagar
             DeleteButton.TabIndex = 3;
             DeleteButton.Text = "Deletar Contas";
             DeleteButton.UseVisualStyleBackColor = true;
+            DeleteButton.Click += DeleteButton_Click;
             // 
             // SearchButton
             // 
