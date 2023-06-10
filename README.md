@@ -28,5 +28,5 @@ ContasAPagar é um aplicativo de gerenciamento de contas a pagar desenvolvido em
 
 - `ContasAPagar`: Projeto principal que contém a interface do usuário e a lógica de apresentação.
 - `ContasAPagar.Model`: Classes de modelo para representar contas a pagar.
-- `ContasAPagar.Logic`: Lógica de negócio e operações relacionadas às contas a pagar.
-- `ContasAPagar.Data`: Lógica de acesso a dados para salvar e carregar os dados em formato XML.
+- `ContasAPagar.View`: Classes de visualização responsáveis por todas as  visualizações na aplicação.
+- `ContasAPagar.Controler`: Classes de Controlador responsável por receber as interações do usuário e coordenar a interação entre a visualização e o modelo.
